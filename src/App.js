@@ -39,8 +39,7 @@ class App extends Component {
       console.log("data already here, no need to fetch"); 
       return;
     } 
-
-    fetch("https://arkapi2.herokuapp.com/" + fund + "/6c16dcee-65e6-4565-86da-906be79a8acd")
+    fetch("https://arkapi2.herokuapp.com/" + fund + "/7dda18c3-9451-4262-8617-af7937100b7b")
     .then(
       response=> response.json())
     .then(
@@ -162,6 +161,9 @@ class App extends Component {
     })
   }
   
+
+
+
   render() {
 
     const colStyle = {
@@ -171,7 +173,7 @@ class App extends Component {
     }; 
 
     return (
-    <div class="entireApp">
+    <div className="entireApp">
       <Container>
         
         <Intro toggle={this.toggleDisplayIntro} displayIntro={this.state.displayIntro}></Intro>

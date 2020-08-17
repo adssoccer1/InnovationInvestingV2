@@ -11,7 +11,7 @@ class StockInfo extends Component {
         return(
             <Table borderless responsive striped>
 
-                <thead class="stockInfoHeaders">
+                <thead className="stockInfoHeaders">
                     <tr>
                         <td>Ticker</td>
                         <td>Last Close Price</td>

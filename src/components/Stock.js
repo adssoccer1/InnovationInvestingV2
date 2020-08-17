@@ -24,7 +24,7 @@ class Stock extends Component {
         const imageStyle = {
             width: '8%',
             height: 'auto',
-            'margin-right': '20px'
+            'marginRight': '20px'
         }; 
       
         const link = "https://www.google.com/search?ei=KZEwX7DMLdSGytMP2aaHmAs&q="+ this.props.ticker + "+stock&oq=tsla+stock&gs_lcp=CgZwc3ktYWIQAzIFCAAQsQMyBAgAEEMyBAgAEEMyBwgAELEDEEMyAggAMgcIABCxAxBDMgQIABBDMgcIABCxAxBDMgQIABBDMgcIABCxAxAKOgQIABBHUJicCFiYnAhg9Z4IaABwAXgAgAFXiAFXkgEBMZgBAKABAaoBB2d3cy13aXrAAQE&sclient=psy-ab&ved=0ahUKEwjwhI2YrY_rAhVUg3IEHVnTAbMQ4dUDCAw&uact=5";
@@ -32,43 +32,43 @@ class Stock extends Component {
         
 
         return(
-            <div class="Stock">
+            <div className="Stock">
                 <Card style={cardStyle}>
                     <Accordion.Toggle as={Card.Header} eventKey={this.props.index + 1}>
 
-                        <div class="accordianToggle">
-                            <div class="accordianToggleLeft">
+                        <div className="accordianToggle">
+                            <div className="accordianToggleLeft">
                                 <Image style={imageStyle} src={this.props.logo} fluid roundedCircle />
-                                {this.props.company} <span class="accordianTickerHeader">({this.props.ticker})</span>
+                                {this.props.company} <span className="accordianTickerHeader">({this.props.ticker})</span>
                             </div>
-                            <div class="accordianToggleRight"></div>
+                            <div className="accordianToggleRight"></div>
 
-                            <table class="accordianToggleCenter">
-                                <tbody class="accordianStockInfo">
+                            <table className="accordianToggleCenter">
+                                <tbody className="accordianStockInfo">
                                     <tr>
-                                        <td class="accordianColTitle">Previous Close</td>
-                                        <td class="accordianColInfo">${this.props.price}</td>
-                                        <td class="accordianColTitle">Market Cap</td>
-                                        <td class="accordianColInfo">${this.props.marketCap} Million</td>
-                                        <td class="accordianColTitle">% Weight of {this.props.fund}</td>  
-                                        <td class="accordianColInfo">{this.props.weight}%</td>                                   
+                                        <td className="accordianColTitle">Previous Close</td>
+                                        <td className="accordianColInfo">${this.props.price}</td>
+                                        <td className="accordianColTitle">Market Cap</td>
+                                        <td className="accordianColInfo">${this.props.marketCap} Million</td>
+                                        <td className="accordianColTitle">% Weight of {this.props.fund}</td>  
+                                        <td className="accordianColInfo">{this.props.weight}%</td>                                   
                                     </tr>
                                     <tr>
-                                        <td class="accordianColTitle">52 Wk Low</td>
-                                        <td class="accordianColInfo">${this.props.fiftyTwoWeekLow}</td>
+                                        <td className="accordianColTitle">52 Wk Low</td>
+                                        <td className="accordianColInfo">${this.props.fiftyTwoWeekLow}</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
 
-                                        <td class="accordianColTitle">Value in {this.props.fund}</td>
-                                        <td class="accordianColInfo">${Math.round(this.props.value / 1000000)} Million</td>
+                                        <td className="accordianColTitle">Value in {this.props.fund}</td>
+                                        <td className="accordianColInfo">${Math.round(this.props.value / 1000000)} Million</td>
                                     </tr>
                                     <tr>
-                                        <td class="accordianColTitle">52 Wk High</td>
-                                        <td class="accordianColInfo">${this.props.fiftyTwoWeekHigh}</td>
+                                        <td className="accordianColTitle">52 Wk High</td>
+                                        <td className="accordianColInfo">${this.props.fiftyTwoWeekHigh}</td>
                                         <td>&nbsp;</td>
                                         <td>&nbsp;</td>
-                                        <td class="accordianColTitle">% of Company Owned</td>
-                                        <td class="accordianColInfo">{Math.round( (parseInt(this.props.value, 10) / (parseInt(this.props.marketCap, 10) *1000000)) * 100 * 100) / 100}%</td>
+                                        <td className="accordianColTitle">% of Company Owned</td>
+                                        <td className="accordianColInfo">{Math.round( (parseInt(this.props.value, 10) / (parseInt(this.props.marketCap, 10) *1000000)) * 100 * 100) / 100}%</td>
                                     </tr>
                                     <tr>
                                     </tr>
@@ -86,7 +86,7 @@ class Stock extends Component {
                         <Card.Body>
                         
                             <StockInfo {...this.props}></StockInfo>
-                            <div class="stockInfoFooter">
+                            <div className="stockInfoFooter">
                                 <p>
                                     <span>{this.props.ticker} Website: <a rel="noopener noreferrer" target="_blank" href={this.props.weburl}>here</a></span> &nbsp;
                                     &nbsp;
