@@ -19,7 +19,7 @@ class Fund extends Component {
         }else{
 
             const stockList = this.props.holdings[this.props.displayFund]["holdings"].map((item, index) => {
-                return <Stock key={item.ticker} fund={this.props.displayFund} index={index} {...item}/>
+                return <Stock key={item.cusip} fund={this.props.displayFund} index={index} {...item}/>
             })
             
             return (

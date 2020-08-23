@@ -36,6 +36,9 @@ class App extends Component {
     this.toggleDisplayIntro = this.toggleDisplayIntro.bind(this);
     this.handleClose = this.handleClose.bind(this);
 
+    this.changeSortBy = this.changeSortBy.bind(this);
+    this.changeFund = this.changeFund.bind(this);
+
 
   }
 
@@ -149,9 +152,12 @@ class App extends Component {
     console.log("sorting by percent of company owned by ark");
     const fund = this.state.displayFund; 
     const listOfHoldings = [...this.state.fundHoldings[fund]["holdings"]];
-    listOfHoldings.sort((a, b) => (( a.value) / (a.marketCap *1000000)  < ( b.value) / (b.marketCap *1000000)) ? 1 : -1)
+    listOfHoldings.sort((a, b) => (( a.value) / (a.marketCap *1000000)  < ( b.value) / (b.marketCap *1000000))  ? 1 : -1)
     this.setState(prevState => {
       let fundHoldings = Object.assign({}, prevState.fundHoldings)
+      console.log(prevState.fundHoldings[fund]["holdings"])
+      console.log("-------------------------")
+      console.log(fundHoldings[fund]["holdings"])
       fundHoldings[fund]["holdings"] = listOfHoldings;
       fundHoldings[fund]["sortBy"] = "% of Company Owned by " +fund;
       return{fundHoldings}; 
