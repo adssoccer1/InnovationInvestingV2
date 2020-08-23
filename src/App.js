@@ -138,7 +138,7 @@ class App extends Component {
         }else if(newSortBy ==="3 Month Performance"){
           console.log("now sorting by 3 Month Performance")
           this.sortBy3MonthPerformance();
-        }else if(newSortBy === "% of Company Owned by " +this.state.displayFund){
+        }else if(newSortBy === "% of Company Owned in " +this.state.displayFund){
           console.log("now sorting for: ", newSortBy)
           this.percentCompanyOwned(); 
         }

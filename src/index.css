@@ -1,6 +1,8 @@
 body {
   margin: 0;
-  
+
+  background-image: url(${rickRiverFlying.png});
+
   background-repeat: no-repeat; 
   background-attachment: fixed;
 
