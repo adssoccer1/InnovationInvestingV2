@@ -21,10 +21,12 @@ class FundHeader extends Component {
 
                     <Dropdown.Menu>
                         <Dropdown.Item onClick={this.props.handler}>Largest Position by Weight</Dropdown.Item>
+                        <Dropdown.Item onClick={this.props.handler}>% of Company Owned in {this.props.displayFund}</Dropdown.Item>
                         <Dropdown.Item onClick={this.props.handler}>Increasing Market Cap</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.handler}>Closest to 52 Week Low</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.handler}>Closest to 52 Week High</Dropdown.Item>
-                        <Dropdown.Item onClick={this.props.handler}>% of Company Owned by {this.props.displayFund}</Dropdown.Item>
+                        <Dropdown.Item onClick={this.props.handler}>1 Year Performance</Dropdown.Item>
+                        <Dropdown.Item onClick={this.props.handler}>6 Month Performance</Dropdown.Item>
+                        <Dropdown.Item onClick={this.props.handler}>3 Month Performance</Dropdown.Item>
+
                     </Dropdown.Menu>
                 </Dropdown>
                 <h6>{this.props.sortBy}</h6>

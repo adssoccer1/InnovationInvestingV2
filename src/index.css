@@ -11,13 +11,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.col {
+}
+
+tbody{
+  font-size: x-small;
+
+}
+
+.modalBody{
+  text-align: center;
+}
+thead{
+  font-size: small;
+
+}
+th{
+  font-weight: normal;
+}
+
+.fundBody{
+  margin: 30px;
+}
+
+.Stock{
+  margin: 10px; 
+  opacity: 1.0;
+}
+
 #coffee{
   text-align: center;
   margin-bottom: 10px;
 }
-.Stock{
-  margin: 10px; 
-  opacity: 1.0;
+
+
+#mainCol {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 8px;
+}
+
+#FundHeader{
+  text-align: center;
 }
 
 .Stock .middleOfCard{
@@ -25,8 +60,9 @@ body {
 }
 
 .FundDisplay{
-  margin-bottom: 60px;
+  margin-bottom: 10px;
 }
+
 .stockInfoFooter {
   text-align: center;
 }
@@ -76,9 +112,24 @@ body {
 }
 
 .introInfoDiv{
-  margin: 40px;
   text-align: center;
+  margin: 40px;
   font-size: medium;
+  border-style: solid;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.left {
+  margin:auto auto auto 0;
+  text-align:left;
+
+}
+
+#hideButton{
+  margin: auto;
 }
 
 
@@ -90,3 +141,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.navbardesc{
+  font-size: x-small;
+  margin-bottom: 0px;
+}
+

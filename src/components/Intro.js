@@ -19,7 +19,7 @@ class Intro extends Component {
             <Jumbotron style={jumbotronStyle} className="Jumbotron">
                 <h1>Innovation Investors Only! <span role="img">&#128581;</span> </h1>
                 <p>
-                    For the fans and followers of <a href="https://ark-invest.com/" rel="noopener noreferrer" target="_blank">Ark Invest</a> &#x1f680;
+                    For the fans and followers of <a href="https://ark-invest.com/" rel="noopener noreferrer" target="_blank">Ark Invest</a> <span role="img">&#x1f680;</span>
                 </p>
                 <p>
                     {!this.props.displayIntro && <Button onClick={this.props.toggle} variant="primary">Learn more</Button>}
