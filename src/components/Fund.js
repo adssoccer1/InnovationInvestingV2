@@ -39,8 +39,8 @@ class Fund extends Component {
                                 <th>EPS</th>
                             
                                 <th>Price</th>
-                                <th>52 Week High</th>
                                 <th>52 Week Low</th>
+                                <th>52 Week High</th>
                                 <th>50 Day Mov Avg</th>
                                 <th>200 Day Mov Avg</th>
     
