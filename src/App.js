@@ -47,7 +47,9 @@ class App extends Component {
 
   
   componentDidMount() {
-    this.getData(); 
+    this.getData(() => {
+
+    }); 
   }
 
   getData() {
@@ -66,6 +68,9 @@ class App extends Component {
         this.setState(prevState => {
           let fundHoldings = Object.assign({}, prevState.fundHoldings)
           let date = data.timestamp;
+          if(fund === "All"){
+            data.holdings = data.holdings.sort((a, b) => (a.weight < b.weight) ? 1 : -1)
+          }
           fundHoldings[fund]["holdings"] = data.holdings;
           return {fundHoldings, date};
         })
