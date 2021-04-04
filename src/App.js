@@ -284,7 +284,7 @@ class App extends Component {
           </Modal>
 
 
-        <Intro toggle={this.toggleDisplayIntro} displayIntro={this.state.displayIntro}></Intro>
+        {/*<Intro toggle={this.toggleDisplayIntro} displayIntro={this.state.displayIntro}></Intro> */}
 
         <MainNavBar handler={this.changeFund}></MainNavBar>
 
