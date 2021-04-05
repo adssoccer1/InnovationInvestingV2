@@ -47,6 +47,7 @@ class App extends Component {
 
   
   componentDidMount() {
+    console.log("component has been mounted");
     this.getData(() => {
 
     }); 
